@@ -1,4 +1,4 @@
-# Task Manager Backend 📋
+# Task Manager API 📋
 
 A RESTful API for managing personal tasks with JWT-based authentication, built with Node.js, Express, and MongoDB. Documented with Swagger for easy exploration and testing.
 
@@ -55,11 +55,13 @@ A RESTful API for managing personal tasks with JWT-based authentication, built w
 ## 🚀 Installation
 
 1. Clone the repository:
-   git clone https://github.com/exejob987/tasks-manager.git
-   cd tasks-manager
+   git clone https://github.com/exejob987/tasks-manager-backend.git
+   cd tasks-manager-backend
 
 2. Navigate to the backend directory.
 3. Install the required dependencies using npm.
+   - Recommended Node.js versions: 18.x or 20.x (LTS versions).
+   - npm install.
 4. Set up a MongoDB instance (local or cloud-based).
 
 ---
@@ -74,15 +76,19 @@ A RESTful API for managing personal tasks with JWT-based authentication, built w
 
 ## ▶️ Running the Server
 
-1. Start the server in production mode from the backend directory.
-2. Start in development mode for automatic restarts.
-3. Access the API and Swagger UI via the local server address.
+1. Start the server in production mode from the backend directory:
+   - Command: `npm start`
+2. Start in development mode for automatic restarts:
+   - Command: `npm run dev`
+3. Access the API and Swagger UI via the local server address:
+   - Base URL: http://localhost:3000
+   - Swagger UI: http://localhost:3000/api-docs
 
 ---
 
 ## 📚 API Documentation with Swagger
 
-Explore and test the API using the integrated Swagger UI.
+Explore and test the API using the integrated Swagger UI at http://localhost:3000/api-docs.
 
 ### Endpoints
 
@@ -103,7 +109,8 @@ Explore and test the API using the integrated Swagger UI.
 
 ### Automated Tests
 
-1. Run tests from the backend directory.
+1. Run tests from the backend directory:
+   - Command: `npm test`
 2. Review test coverage reports generated during the process.
 3. Update tests as needed to cover new functionality.
 
